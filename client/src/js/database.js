@@ -34,4 +34,5 @@ export const getDb = async () => {
   console.log("jate database retrieved", result);
   return result;
 };
+
 initdb();
