@@ -42,14 +42,14 @@ registerRoute(
   })
 );
 
-registerRoute(
-  ({ request }) => request.destination === "image",
-  new CacheFirst({
-    cacheName: "image-cache",
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-    ],
-  })
-);
+// registerRoute(
+//   ({ request }) => request.destination === "image",
+//   new CacheFirst({
+//     cacheName: "image-cache",
+//     plugins: [
+//       new CacheableResponsePlugin({
+//         statuses: [0, 200],
+//       }),
+//     ],
+//   })
+// );
